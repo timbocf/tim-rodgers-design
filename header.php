@@ -32,7 +32,7 @@
 						<div class="col-xs-12">
 							<header class="navbar navbar-inverse bs-docs-nav" role="banner">
 
-								<div class="navbar-header">
+								<div class="navbar-header col-xs-2 col-xs-push-10">
 									<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 										<span class="sr-only">Toggle navigation</span>
 										<span class="icon-bar"></span>
@@ -41,22 +41,27 @@
 									</button>
 								</div>
 
-								<a href="home"><img src="<?php bloginfo('template_directory') ?>/images/trd-logo.png" class="logo img-responsive"></a>
+								<div class="navbar-content col-xs-10 col-xs-pull-2">
 
-								<nav class="collapse navbar-collapse bs-navbar-collapse col-xs-12" role="navigation">
-									
-									<ul class="nav navbar-nav row">
-										<li><a href="home" class="active first" id="home">Home</a></li>
-										<li><a href="about-us" id="about-us">About Us</a></li>
-										<li><a href="services" id="services">Services</a></li>
-										<li><a href="portfolio" id="portfolio">Portfolio</a></li>
-										<li><a href="contact-us" id="contact-us">Contact Us</a></li>
-										<li class="social">
-											<a href="//facebook.com" class="icon-social-facebook">Facebook</a>
-											<a href="//twitter.com" class="icon-social-twitter">Twitter</a>
-										</li>
-									</ul>
-								</nav>
+									<a href="home"><img src="<?php bloginfo('template_directory') ?>/images/trd-logo.png" class="logo img-responsive"></a>
+
+									<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+										
+										<ul class="nav navbar-nav">
+											<li><a href="home" class="active first" id="home">Home</a></li>
+											<li><a href="about-us" id="about-us">About Us</a></li>
+											<li><a href="services" id="services">Services</a></li>
+											<li><a href="portfolio" id="portfolio">Portfolio</a></li>
+											<li><a href="contact-us" id="contact-us">Contact Us</a></li>
+											<li class="social">
+												<a href="//facebook.com" class="icon-social-facebook">Facebook</a>
+												<a href="//twitter.com" class="icon-social-twitter">Twitter</a>
+											</li>
+										</ul>
+									</nav>
+
+								</div>
+
 							</header>
 						</div><!-- col-xs-12 -->
 					</div><!-- container -->

@@ -175,6 +175,7 @@ h6 {
 
 p {
 	margin-bottom: 1.5em;
+	font-size: 1.2em;
 }
 
 b,
@@ -510,16 +511,7 @@ a:active {
 	display: none;
 }
 
-@media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
 
-	.main-navigation ul {
-		display: none;
-	}
-}
 
 .site-main .comment-navigation,
 .site-main .paging-navigation,
@@ -815,6 +807,11 @@ body {
 	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif !important;
 }
 
+.container-fluid {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
 
 /* HEADER */
 .header-wrap, .navbar, .navbar-inverse, .navigation, .nav li {
@@ -834,25 +831,16 @@ body {
 .navigation {
 	height: 4em;
 }
-.logo {
-	width: 327px;
-	height: 131px;
-	position: absolute;
-	top: -5px;
-	left: 50%;
-	z-index: 100;
-	margin-left: -163px;
-}
 .nav li {
-	padding-right: 20px;
+	padding-right: 10px;
 	font-size: 1.5em;
 }
 .nav li:nth-child(4) {
 	margin-left: 350px;
-	padding-right: 5px;
+	padding-right: 0;
 }
 .nav li:nth-child(5) {
-	padding-right: 5px;
+	padding-right: 0;
 }
 .social {
 	padding-right: 0;
@@ -912,6 +900,40 @@ body {
 	border-bottom: 8px solid #515151;
 }
 
+/** HOME **/
+.home-bg {
+	/*margin-top: -37px;*/
+	height: 950px;
+	width: 100%;
+	background: url(http://timrodgersdesign.com/wp-content/uploads/2014/09/home-img.jpg) no-repeat top left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+
+.home-portfolio-gallery-wrap {
+	background: url(http://timrodgersdesign.com/wp-content/uploads/2014/09/computer-screen.png) no-repeat bottom right;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+}
+
+/** SERVICES **/
+.services-content ul {
+	list-style-type: none;
+	text-indent: 0;
+	margin-left: 0;
+}
+.services-content ul li {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
 /** FOOTER **/
 .footer {
 	border-top: 15px solid #0add32;
@@ -937,7 +959,66 @@ body {
 	padding: 0;
 	margin: 0;
 }
-@media screen and (max-width: 750px) {
+
+.footer-nav li {
+	padding-right: 2em;
+}
+
+/** RESPONSIVE **/
+.navbar-toggle {
+	float: none !important;
+	box-shadow: none !important;
+	background: none !important;
+	border: 0 !important;
+	margin-top: 10px !important;
+	margin-bottom: 0 !important;
+}
+.navbar-content {
+	background: transparent;
+	overflow: visible;
+}
+@media screen and (min-width: 1025px) {
+	.logo {
+		width: 327px;
+		height: 131px;
+		position: absolute;
+		top: -5px;
+		left: 59%;
+		z-index: 100;
+		margin-left: -163px;
+	}
+	.navbar-nav {
+		width: 1024px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.logo {
+		width: 64%;
+	}
+	.navbar-inverse {
+		/*background: transparent !important;*/
+		border: 0 !important;
+	}
+	.navbar-collapse {
+		background: #000000 !important;
+	}
+	.nav li:nth-child(4) {
+		margin-left: 0;
+	}
+	.social a {
+		float: none;
+		height: 40px !important;
+	}
 	.footer-col {
 		margin-bottom: 3em;
 	}
@@ -953,9 +1034,6 @@ body {
 	.footer-nav li {
 		float: left;
 	}
-}
-.footer-nav li {
-	padding-right: 2em;
 }
 
 /** TESTING **/
